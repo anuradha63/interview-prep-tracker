@@ -110,14 +110,3 @@ interview-tracker/
 
 ---
 
-## Changes from Original Code
-
-| Issue | Fix |
-|-------|-----|
-| Hardcoded MongoDB URI (old cluster) | Updated to your Atlas cluster via `.env` |
-| Hardcoded ObjectIds in controllers | Changed to `findOne({})` — works with any cluster |
-| Mongoose v5 `useCreateIndex` option (deprecated in v6) | Removed; using Mongoose v6 |
-| Missing `body-parser` in dependencies | Added to `package.json` |
-| No `start` script | Added `npm start` and `npm run dev` |
-| No `.env` support | Added `dotenv` |
-| No seed script | Created `seed.js` to initialise DB |
